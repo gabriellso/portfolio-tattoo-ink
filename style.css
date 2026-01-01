@@ -216,24 +216,25 @@ img { max-width: 100%; display: block; }
 
 /* ===== Scroll Reveal Animations ===== */
 
-.fade-in,
-.fade-in-left,
-.fade-in-right {
+[data-animate] {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 0.9s ease, transform 0.9s ease;
   will-change: opacity, transform;
 }
 
-.fade-in-left {
+[data-animate="up"] {
+  transform: translateY(40px);
+}
+
+[data-animate="left"] {
   transform: translateX(-40px);
 }
 
-.fade-in-right {
+[data-animate="right"] {
   transform: translateX(40px);
 }
 
-.visible {
+[data-animate].visible {
   opacity: 1;
   transform: translate(0, 0);
 }
@@ -434,4 +435,3 @@ img { max-width: 100%; display: block; }
     scroll-snap-align: center;
   }
 }
-
