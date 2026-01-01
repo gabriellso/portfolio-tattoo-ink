@@ -48,10 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (animatedElements.length) {
     const revealObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          return;
+        }
 
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+        entry.target.classList.remove('visible');
       });
     }, {
       threshold: 0.2,
