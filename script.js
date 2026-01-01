@@ -41,6 +41,27 @@ document.addEventListener('DOMContentLoaded', () => {
   lazyImages.forEach(img => imageObserver.observe(img));
 
   /* =========================
+     ANIMAÇÕES DE SCROLL
+  ========================== */
+  const animatedElements = document.querySelectorAll('[data-animate]');
+
+  if (animatedElements.length) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, {
+      threshold: 0.2,
+      rootMargin: '0px 0px -10% 0px'
+    });
+
+    animatedElements.forEach(el => revealObserver.observe(el));
+  }
+
+  /* =========================
      LIGHTBOX (GALERIA)
   ========================== */
   const lightbox = document.getElementById('lightbox');
