@@ -1,4 +1,4 @@
-# Caio Ink — Portfólio de Tatuagem
+# Portfólio de Tatuagem
 
 Site de portfólio profissional para tatuador, com foco em apresentação visual e contato rápido via WhatsApp.
 
