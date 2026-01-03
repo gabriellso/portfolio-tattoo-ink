@@ -30,15 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!entry.isIntersecting) return;
 
       const img = entry.target;
-      const picture = img.closest('picture');
-
-      if (picture) {
-        picture.querySelectorAll('source[data-srcset]').forEach(source => {
-          source.srcset = source.dataset.srcset;
-          source.removeAttribute('data-srcset');
-        });
-      }
-
       img.src = img.dataset.src;
       img.removeAttribute('data-src');
       observer.unobserve(img);
