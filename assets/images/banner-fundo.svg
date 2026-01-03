@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="960" viewBox="0 0 1600 960" role="img" aria-labelledby="title desc">
+  <title id="title">Textura de fundo escura com linhas</title>
+  <desc id="desc">Gradiente escuro com linhas diagonais douradas sutis para remeter a tatuagem.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f0f"/>
+      <stop offset="50%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#0b0b0b"/>
+    </linearGradient>
+    <linearGradient id="lines" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a55c" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#c9a55c" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="960" fill="url(#bg)"/>
+  <g stroke="url(#lines)" stroke-width="3" stroke-linecap="round">
+    <path d="M-200 820 L380 -120"/>
+    <path d="M20 960 L600 0"/>
+    <path d="M240 960 L820 0"/>
+    <path d="M460 960 L1040 0"/>
+    <path d="M680 960 L1260 0"/>
+    <path d="M900 960 L1480 0"/>
+    <path d="M1120 960 L1700 0"/>
+    <path d="M1340 960 L1920 0"/>
+  </g>
+  <rect x="0" y="0" width="1600" height="960" fill="#000" opacity="0.15"/>
+</svg>
