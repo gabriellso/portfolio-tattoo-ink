@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
-  <title id="title">Lobo minimalista</title>
-  <desc id="desc">Silhueta de lobo em estilo geométrico minimalista.</desc>
-  <rect width="900" height="900" fill="#0f0f0f"/>
-  <path d="M450 160 L520 240 L600 380 L520 360 L540 520 L450 460 L360 520 L380 360 L300 380 L380 240 Z" fill="none" stroke="#e0e0e0" stroke-width="8" stroke-linejoin="round"/>
-  <path d="M380 360 L450 420 L520 360" fill="none" stroke="#c9a55c" stroke-width="6" stroke-linejoin="round"/>
-</svg>

@@ -4,43 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio de Tatuagem - Arte na pele, Blackwork, GeekTattoo e Old School. Agende sua sessão.">
-    <meta property="og:title" content="Caio | Arte na Pele">
-    <meta property="og:description" content="Portfólio de tatuagem com Blackwork, GeekTattoo e Fine Line. Agende sua sessão.">
-    <meta property="og:image" content="assets/images/banner-fundo.svg">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#121212">
     <title>Caio | Arte na Pele</title>
 
-    <link rel="icon" href="assets/icons/maquina-de-tatuagem.svg" type="image/svg+xml">
-    <link rel="preload" href="assets/images/banner-fundo.svg" as="image" imagesrcset="assets/images/banner-fundo.svg" imagesizes="100vw">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="shortcut icon" href="assets/icons/maquina-de-tatuagem.ico" type="image/x-icon">
 
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="style.css" as="style">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<a class="skip-link" href="#home">Pular para o conteúdo</a>
 <header id="header">
     <nav class="navbar container">
-        <a href="#home" class="logo">C A I O <span>I N K</span></a>
+        <a href="#" class="logo">C A I O <span>I N K</span></a>
 
-        <button class="menu-toggle" id="mobile-menu" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu principal">
+        <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </button>
+        </div>
 
-        <ul class="nav-list" id="primary-nav">
+        <ul class="nav-list">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">Sobre</a></li>
             <li><a href="#gallery">Galeria</a></li>
             <li><a href="#services">Serviços</a></li>
-            <li><a href="#contact" class="btn-cta">Agendar</a></li>
+            <li><a href="" class="btn-cta">Agendar</a></li>
         </ul>
     </nav>
 </header>
@@ -59,7 +49,7 @@
 <section id="about" class="section container">
     <div class="about-grid">
         <div class="about-img" data-animate="left">
-            <img src="assets/images/foto-caio.svg" width="900" height="1100" loading="lazy" decoding="async" alt="Retrato estilizado do tatuador Caio">
+            <img src="assets/images/foto-caio.jpg" alt="Tatuador Caio">
         </div>
 
         <div class="about-text" data-animate="right">
@@ -82,57 +72,45 @@
 
       <div class="gallery-item">
         <img 
-            src="assets/images/tattoo-1.svg"
-            width="900"
-            height="900"
+            src="assets/images/tattoo-1.jpg"
             loading="lazy"
             decoding="async"
-            data-full="assets/images/tattoo-1.svg"
-            alt="Arte Blackwork geométrica"
+            alt="Tatuagem Blackwork"
         >
       </div>
 
       <div class="gallery-item">
         <img 
-            src="assets/images/tattoo-2.svg"
-            width="900"
-            height="900"
+            src="assets/images/tattoo-2.jpg"
             loading="lazy"
             decoding="async"
-            data-full="assets/images/tattoo-2.svg"
-            alt="Tatuagem de traços finos"
+            alt="Tatuagem Blackwork"
         >
       </div>
 
       <div class="gallery-item">
         <img 
-            src="assets/images/tattoo-3.svg"
-            width="900"
-            height="900"
+            src="assets/images/tattoo-3.jpg"
             loading="lazy"
             decoding="async"
-            data-full="assets/images/tattoo-3.svg"
-            alt="Tatuagem de lobo minimalista"
+            alt="Tatuagem Blackwork"
         >
       </div>
 
       <div class="gallery-item">
         <img 
-            src="assets/images/tattoo-4.svg"
-            width="900"
-            height="900"
+            src="assets/images/tattoo-4.jpg"
             loading="lazy"
             decoding="async"
-            data-full="assets/images/tattoo-4.svg"
-            alt="Tatuagem de flor estilizada"
+            alt="Tatuagem Blackwork"
         >
       </div>
     </div>
 </section>
 
-<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visualização ampliada da imagem">
-    <button class="close" type="button" aria-label="Fechar lightbox">&times;</button>
-    <img class="lightbox-content" id="lightbox-img" alt="Visualização ampliada da tatuagem selecionada">
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
 </div>
 
 <section id="services" class="section container">
@@ -176,32 +154,29 @@
             </div>
 
             <div class="social-links">
-                <a href="https://www.instagram.com/olimpio_ink/?hl=pt-br" target="_blank" rel="noreferrer noopener" aria-label="Instagram de Olimpio Ink">
+                <a href="https://www.instagram.com/olimpio_ink/?hl=pt-br" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://www.tiktok.com/@olimpio_ink?_r=1&_t=ZM-92HqhDF6Uyh" target="_blank" rel="noreferrer noopener" aria-label="TikTok de Olimpio Ink">
+                <a href="https://www.tiktok.com/@olimpio_ink?_r=1&_t=ZM-92HqhDF6Uyh" target="_blank">
                     <i class="fab fa-tiktok"></i>
                 </a>
-                 <a href="https://wa.me/message/6ON6RY4STUVMK1" target="_blank" rel="noreferrer noopener" aria-label="WhatsApp de Olimpio Ink">
+                 <a href="https://wa.me/message/6ON6RY4STUVMK1" target="_blank">
                     <i class="fab fa-whatsapp"></i>
                 </a>
             </div>
         </div>
 
-        <form class="contact-form" id="contactForm" data-animate="right" aria-label="Formulário de contato para orçamento">
-            <label for="name" class="sr-only">Seu Nome</label>
-            <input type="text" id="name" name="name" placeholder="Seu Nome" autocomplete="name" required>
+        <form class="contact-form" id="contactForm" data-animate="right">
+            <input type="text" id="name" placeholder="Seu Nome" required>
             
-            <label for="size" class="sr-only">Tamanho Aproximado da tatuagem</label>
-            <select id="size" name="size" required>
+            <select id="size">
                 <option value="">Tamanho Aproximado</option>
                 <option value="pequeno">Pequena (até 7cm)</option>
                 <option value="medio">Média (até 15cm)</option>
                 <option value="grande">Grande / Fechamento</option>
             </select>
 
-            <label for="description" class="sr-only">Descrição da ideia</label>
-            <textarea rows="5" id="description" name="description" placeholder="Descreva sua ideia e local do corpo..." required></textarea>
+            <textarea rows="5" id="description" placeholder="Descreva sua ideia e local do corpo..." required></textarea>
 
             <button type="submit" class="btn-submit">Enviar via WhatsApp</button>
 
@@ -218,12 +193,10 @@
 
 <a href="https://wa.me/5531995281748?text=Olá!%20Vim%20pelo%20site.%0AQuero%20fazer%20um%20orçamento%20de%20tatuagem."
    class="whatsapp-float"
-   target="_blank"
-   rel="noreferrer noopener"
-   aria-label="Abrir WhatsApp para orçamento">
+   target="_blank">
     <i class="fab fa-whatsapp"></i>
 </a>
 
-<script src="script.js" defer></script>
+<script src="script.js"></script>
 </body>
 </html>
