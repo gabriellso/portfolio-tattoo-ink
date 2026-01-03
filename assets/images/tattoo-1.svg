@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Arte Blackwork geométrica</title>
+  <desc id="desc">Formas geométricas pretas com detalhe dourado.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0f0f0f"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="900" fill="url(#paper)"/>
+  <g fill="none" stroke="#c9a55c" stroke-width="6">
+    <circle cx="450" cy="450" r="300" opacity="0.35"/>
+    <path d="M200 700 L450 200 L700 700 Z" opacity="0.6"/>
+    <circle cx="450" cy="450" r="140" opacity="0.8"/>
+  </g>
+  <path d="M320 540 Q450 340 580 560" stroke="#e0e0e0" stroke-width="10" fill="none" stroke-linecap="round"/>
+</svg>
